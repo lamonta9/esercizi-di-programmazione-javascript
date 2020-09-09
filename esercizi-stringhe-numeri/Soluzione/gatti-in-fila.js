@@ -17,3 +17,17 @@
 
   http://www.imparareaprogrammare.it
 */
+var gatti=44; //numero totali di gatti
+var fila=6; //numero di gatti per fila
+var file; //file totali
+var ultimafila; //numero di gatti presenti nell'ultima fila
+var gattimancanti; //numero di garri che mancano per completare l'ultima fila
+file =Math.ceil(gatti / fila); // Arrotonda all'intero sup.
+ultimafila= gatti % fila;
+gattimancanti = fila - ultimafila;
+
+console.log('Gatti: '+gatti);
+console.log('in Fila da: '+fila);
+console.log('File : '+file);
+console.log('Ultima Fila: '+ultimafila);
+console.log('Gatti mancanti nella ultima fila: '+gattimancanti);
